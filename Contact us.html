@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodie</title>
+
+    <!-- favicon-->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="Contact us.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+</head>
+<body>
+
+<!-- Navbar Section start here -->  
+<nav class="navbar navbar-expand-lg bg-warning">
+    <div class="container">
+    
+      <a class="navbar-brand" href="index.html">
+        <i class="fa-solid fa-utensils"></i>
+        Bogura Resturent</a>
+      
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="About us.html">About Us</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="Contact us.html" target="_blank"><b>Contact us</b></a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="FAQ.html">FAQ</a>
+          </li>
+
+        </ul>
+        
+      </div>
+    </div>
+    <p id="displayTime"></p>
+  </nav>
+ 
+  <!--End navbar-->
+
+
+  <!-- contact us form here -->
+<!--Contact Form Section-->
+<section class="contact-section">
+  <div class="container">
+        <div class="row contact">
+            <h2>Contact Us</h2>
+        </div>
+      <div class="row">
+    <div class="col-md-6">
+      <div class="contact-form">
+      <form>
+        <div class="row">
+        <div class="mb-3 col-md-12">
+        <label for="exampleFormControlInput1" class="form-label">Name</label>
+        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Enter Name">
+        </div>
+        
+        <div class="mb-3 col-md-6">
+        <label for="exampleFormControlInput1" class="form-label">Email</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter Email">
+        </div>
+        
+        <div class="mb-3 col-md-6">
+        <label for="exampleFormControlInput1" class="form-label">Phone</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter Phone">
+        </div>
+        
+          <div class="mb-3 col-md-12">
+          <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+          </div>
+          
+          <div class="col-md-3">
+            <button type="submit" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">submit</button>
+          </div>
+        </div>	
+  
+  
+      </form>
+      </div>
+      </div>
+      <div class="col-md-6">
+        
+        <div class="contact-info">
+          <ul>
+  
+        <li><div class="circle"><i class="fas fa-home"></i></div> Bogura Resturent</li>
+          <li><div class="circle"><i class="fas fa-phone"></i></div> +8801711321311</li>
+          <li><div class="circle"><i class="fas fa-envelope"></i></div> naiyannoor@gmail.com</li>
+          <li><div class="circle"><i class="fas fa-clock"></i></div> 24/7 8:00 AM to 4:00 PM</li>
+          </ul>
+      </div>
+    </div>
+  </div>
+  </section>
+  
+  
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Confirmation</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-primary" onclick="myFunction()">Submit</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <!--Footer-->
+<footer class="footer">
+  <p class="copyright">© 2024 Bogura Resturent. Developer-Naiyannoor</p>
+  </footer>
+  
+
+
+
+
+<script src="js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
+
+<script>
+  function myFunction(){
+      confirm("You Have Submitted SuccessFully")
+  }
+</script>

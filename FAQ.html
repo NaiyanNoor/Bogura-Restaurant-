@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodie</title>
+
+    <!-- favicon-->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="FAQ.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+</head>
+<body>
+
+<!-- Navbar Section start here -->  
+<nav class="navbar navbar-expand-lg bg-warning">
+    <div class="container">
+    
+      <a class="navbar-brand" href="index.html">
+        <i class="fa-solid fa-utensils"></i>
+        Bogura Resturent</a>
+      
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="About us.html">About Us</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="Contact us.html">Contact Us</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="FAQ.html" target="_blank"><b>FAQ</b></a>
+          </li>
+
+          
+        </ul>
+        
+      </div>
+    </div>
+    <p id="displayTime"></p>
+  </nav>
+ 
+  <!--End navbar-->
+
+<!--FAQ Section-->
+<!--FAQ Section-->
+<h1 class="team-h1">FAQ</h1>
+<br>
+
+<button class="collapsible"><i class="far fa-lightbulb"></i> What are food additives?</button>
+
+<div class="content">
+    <p>A food ingredient is any substance that is added to a food to achieve a desired effect.  Direct food additives are used in foods to impart specific technological or functional qualities. For example, stabilizers are used to help prevent separation of nutrients in milk products, while phosphates are used as a leavening agent in baked goods. Indirect additives are not intentionally added to food, but may be present in trace amounts as a result of processing, packaging, shipping or storage. Both direct and indirect food additives are controlled by national regulatory authorities, such as the U.S. Food and Drug Administration.  Any food ingredient must be proven safe to be used in foods.</p>
+</div>
+
+<button class="collapsible"><i class="far fa-lightbulb"></i>How spicy is your food??</button>
+
+<div class="content">
+    <p>Our dishes range from mild to spicy(HOT!). We’re happy to adjust the spice level to your preference – just let your server know!</p>
+</div>
+
+<button class="collapsible"><i class="far fa-lightbulb"></i>Are food additives harmful to my health?</button>
+
+<div class="content">
+    <p>
+      Food safety is and always will be the primary objective for food ingredient manufacturers.  Before food additives can be added to foods, they must be reviewed and deemed safe for their intended use by either the Food and Drug Administration or a panel of experts. These experts examine studies and all scientific information related to a particular substance and must conclude that the substance is safe for its intended use. Many food additives actually help make foods safer and more enjoyable by ensuring they do not spoil in transport or storage, maintain desirable characteristics, and remain uniform from batch to batch.  Additives may also have beneficial health effects. For example, some food additives such as stabilizers and emulsifiers help ensure vitamins and nutrients do not separate out of a food or beverage.</p>
+</div>
+
+<button class="collapsible"><i class="far fa-lightbulb"></i>How do I know what ingredients are in my food?</button>
+
+<div class="content">
+    <p>In the United States, food manufacturers are required to include a list of used ingredients on all packaged foods and beverages. Ingredients are listed in descending order by weight, meaning the ingredient that weighs the most in the final product is listed first and the ingredient that weighs the least is listed last. The ingredient list is placed on the same label panel as the name and address of the manufacturer, packer or distributor, so you can always reach out to a company and ask about ingredients in their products if you have questions.t.</p>
+</div>
+
+<button class="collapsible"><i class="far fa-lightbulb"></i>How are food additives determined safe?</button>
+
+<div class="content">
+    <p>Under current U.S. law, a food additive may be deemed safe for use in food in one of two ways. First, it may be declared “Generally Recognized As Safe,” for its intended use based on a review by qualified experts of the publicly available scientific data on the substance. FDA’s Generally Recognized as Safe (GRAS) Program is transparent, requiring information considered by the GRAS review panel to be publicly available. This process is rigorous; science based, and has a proven track-record of success and safety. Additionally, an additive may go through the food additive petition process, which requires FDA review of publicly and privately held information on the substance.</p>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<!--Footer-->
+<footer class="footer">
+  <p class="copyright">© 2024 Bogura Resturent. Developer-Naiyannoor</p>
+  </footer>
+  
+
+
+
+<script src="js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
+
+<script>
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+
+  for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function(){
+          this.classList.toggle("activefaq");
+          var content = this.nextElementSibling;
+          if (content.style.maxHeight){
+              content.style.maxHeight = null;
+          } else{
+              content.style.maxHeight = content.scrollHeight + "px"
+          }
+      });
+  }
+</script>
